@@ -149,7 +149,7 @@ input {
     grid-template-rows: 1fr 80px 2fr;
 }
 
-.project p {
+.project p, .site-info p {
     color: rgba(47, 47, 47, 0.706);
 }
 
@@ -160,6 +160,44 @@ input {
     gap: 25px;
     font-size: 1.5rem;
     padding-right: 15px;
+}
+
+.announcements {
+    display: grid;
+    grid-template-rows: 49px repeat(3, 1fr);
+    border-radius: 7px;
+}
+
+.announcements > p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.announcements :not(:first-child):not(:last-child) {
+    margin-bottom: -15px;
+}
+
+.site-info {
+    background-color: white;
+    border-radius: 7px;
+    padding: 25px;
+    box-shadow: 1px 3px 4px rgb(0,0,0, 15%);
+    position: relative;
+}
+
+.site-info p {
+    font-size: .75rem;
+}
+
+.site-info:not(:first-of-type)::after {
+    position: absolute;
+    background-color: rgba(116, 116, 116, 0.503);
+    content: '';
+    z-index: 1;
+    inline-size: 90%;
+    block-size: 1px;
+    inset-inline-start: 18px;
+    inset-block-start: 0px;
 }
 
 img {
