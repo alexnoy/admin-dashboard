@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 200px 1fr;
 }
 
 .header {
@@ -19,10 +19,10 @@
     box-shadow: 1px 3px 4px rgb(0,0,0, 15%);
     display: grid;
     grid-template-columns: 4fr repeat(2, 1fr);
-    grid-template-rows: 1fr 2fr;
-    padding: 20px 0px 10px 20px; 
+    grid-template-rows: 50px 80px;
+    padding: 20px 0px 0px 20px; 
     font-weight: bold;
-    row-gap: 15px;
+    row-gap: 35px;
 }
 
 .search {
@@ -63,6 +63,7 @@ input {
 
 .user-content img {
     height: 80px;
+    border-radius: 50%;
     justify-self: end;
 }
 
@@ -92,27 +93,37 @@ input {
 .sidebar {
     background-color: #008AD8;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     padding: 25px 0 0 25px;
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: 40px 305px 140px;
-    gap: 50px;
-}
-
-.dashboard {
-    font-size: 2rem;
-}
-
-.nav, .branding {
-    display: grid;
-    gap: 25px;
+    gap: 60px;
 }
 
 .nav > *, .branding > *, .dashboard {
     display: flex;
     align-items: center;
+    gap: 25px;
+}
+
+.svg {
+    fill: white;
+    height: 25px;
+}
+
+.dashboard {
+    font-size: 2rem;
+    gap: 15px;
+}
+
+#dash-svg {
+    height: 50px;
+}
+
+.nav, .branding {
+    display: grid;
     gap: 25px;
 }
 
@@ -195,7 +206,7 @@ input {
     grid-row: 5 / 6;
     background-color: white;
     border-radius: 7px;
-    padding: 25px;
+    padding: 25px 45px;
     display: grid;
     align-content: space-between;
 }
@@ -219,7 +230,7 @@ input {
     grid-row: 1 / 3;
 }
 
-img {
+.people img, .user-info img {
     height: 50px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
