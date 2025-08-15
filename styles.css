@@ -159,6 +159,11 @@ input {
     grid-template-rows: 1fr 80px 2fr;
 }
 
+a {
+    text-decoration: none;
+    color: #008AD8;
+}
+
 .project p, .site-info p, .people p:last-of-type{
     color: rgba(47, 47, 47, 0.706);
 }
